@@ -1,0 +1,671 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-29BJT31T8B"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}var cc=null;try{cc=localStorage.getItem('decidir-cookies')}catch(e){}gtag('consent','default',{analytics_storage:cc==='granted'?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('js',new Date());gtag('config','G-29BJT31T8B');</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Soporte integral de RRHH para PyMEs | Decidir Consulting</title><link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="description" content="Tu área de Recursos Humanos, total o parcialmente tercerizada: procesos, políticas, desarrollo y clima, con un abono mensual a medida de tu PyME."><link rel="canonical" href="https://decidirconsulting.netlify.app/soporte-rrhh"><meta property="og:type" content="website"><meta property="og:site_name" content="Decidir Consulting"><meta property="og:locale" content="es_AR"><meta property="og:title" content="Soporte integral de RRHH para PyMEs | Decidir Consulting"><meta property="og:description" content="Tu área de Recursos Humanos, total o parcialmente tercerizada: procesos, políticas, desarrollo y clima, con un abono mensual a medida de tu PyME."><meta property="og:url" content="https://decidirconsulting.netlify.app/soporte-rrhh"><meta property="og:image" content="https://decidirconsulting.netlify.app/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><script>try{var t=localStorage.getItem('decidir-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script><link rel="preload" href="fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><style>@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/bricolage-grotesque-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/bricolage-grotesque-latin-700-normal.woff2) format('woff2')}@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/bricolage-grotesque-latin-800-normal.woff2) format('woff2')}@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/poppins-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/poppins-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/poppins-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/poppins-latin-700-normal.woff2) format('woff2')}/* Layout: bloques redondeados sobre crema (claro) o ciruela profundo (oscuro); grillas que colapsan a una columna en celular */
+:root {
+  --bg: #FBF6F0;
+  --surface: #FFFFFF;
+  --field: #F4ECE6;
+  --ink: #2A1233;
+  --muted: #5E4B63;
+  --line: #EADFD8;
+  --accent: #9F0D58;
+  --accent-hover: #850A49;
+  --on-accent: #FFFFFF;
+  --accent-2: #6B2C91;
+  --plum: #7B1A77;
+  --pink: #BA3882;
+  --tint: #F6E5EE;
+  --tint-ink: #8A0C4C;
+  --tint-2: #EEE4F6;
+  --tint-2-ink: #5A2380;
+  --deep: #3B1446;
+  --deep-2: #4A1B57;
+  --on-deep: #FFFFFF;
+  --on-deep-muted: #E5D3EA;
+  --ok: #1E7A45;
+  --shadow: 0 1px 0 var(--line), 0 14px 34px rgba(59, 20, 70, 0.07);
+  --f-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --f-body: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --r-xl: 40px; --r-lg: 30px; --r-md: 22px; --r-sm: 14px;
+  --wrap: 1280px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #160A1C; --surface: #22122B; --field: #2E1A38; --ink: #F7EEF5; --muted: #C9B7CE; --line: #3A2645;
+    --accent: #F06AAE; --accent-hover: #F58BC0; --on-accent: #1A0B20; --accent-2: #B98BE6; --plum: #DDA2E8; --pink: #F08CC0;
+    --tint: #3A1530; --tint-ink: #FFB8DA; --tint-2: #2F1F47; --tint-2-ink: #D7BDF5;
+    --deep: #36163F; --deep-2: #45204F; --on-deep: #FFFFFF; --on-deep-muted: #E2CFE8; --ok: #4FC487;
+    --shadow: 0 1px 0 var(--line); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #160A1C; --surface: #22122B; --field: #2E1A38; --ink: #F7EEF5; --muted: #C9B7CE; --line: #3A2645;
+  --accent: #F06AAE; --accent-hover: #F58BC0; --on-accent: #1A0B20; --accent-2: #B98BE6; --plum: #DDA2E8; --pink: #F08CC0;
+  --tint: #3A1530; --tint-ink: #FFB8DA; --tint-2: #2F1F47; --tint-2-ink: #D7BDF5;
+  --deep: #36163F; --deep-2: #45204F; --on-deep: #FFFFFF; --on-deep-muted: #E2CFE8; --ok: #4FC487;
+  --shadow: 0 1px 0 var(--line); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+img { max-width: 100%; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16.5px; line-height: 1.6; -webkit-font-smoothing: antialiased; transition: background-color .3s ease, color .3s ease; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; border-radius: 8px; }
+h1, h2, h3, h4 { font-family: var(--f-display); margin: 0; letter-spacing: -0.03em; line-height: 1.02; text-wrap: balance; }
+p { margin: 0; }
+ul { margin: 0; }
+.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: clamp(16px, 4vw, 48px); }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 999px; z-index: 80; }
+.skip:focus { left: 16px; }
+.muted { color: var(--muted); }
+.ph { color: var(--muted); font-style: italic; }
+.logo-light { display: block; }
+.logo-dark { display: none; }
+:root[data-theme="dark"] .logo-light { display: none; }
+:root[data-theme="dark"] .logo-dark { display: block; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-light { display: none; } :root:not([data-theme="light"]) .logo-dark { display: block; } }
+
+/* Botones */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: inherit; font-weight: 600; border: none; cursor: pointer; border-radius: 999px; padding: 15px 26px; transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease; text-align: center; line-height: 1.2; }
+.btn:hover { transform: translateY(-2px); }
+.btn-accent { background: var(--accent); color: var(--on-accent); }
+.btn-accent:hover { background: var(--accent-hover); }
+.btn-ink { background: var(--ink); color: var(--bg); }
+.btn-ghost { background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--line); }
+.btn-light { background: #FFFFFF; color: #3B1446; }
+.btn-sm { padding: 11px 18px; font-size: 14.5px; }
+.link { font-weight: 600; color: var(--accent); display: inline-flex; gap: 6px; align-items: center; }
+.link svg { transition: transform .18s ease; }
+.link:hover svg { transform: translateX(3px); }
+
+/* Header y menú */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-block: 12px; }
+.brand img { height: 46px; width: auto; }
+.nav { display: flex; align-items: center; gap: 2px; font-size: 15px; font-weight: 500; }
+.nav > a, .nav-drop > button { padding: 10px 14px; border-radius: 999px; background: none; border: none; font: inherit; color: inherit; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; white-space: nowrap; }
+.nav > a:hover, .nav-drop > button:hover, .nav > a[aria-current="page"] { background: var(--tint); color: var(--tint-ink); }
+.nav-drop { position: relative; }
+.mega { position: absolute; left: 0; top: calc(100% + 10px); width: min(760px, 92vw); background: var(--surface); border-radius: var(--r-md); box-shadow: 0 20px 50px rgba(30, 10, 40, .18), 0 0 0 1px var(--line); padding: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.mega::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
+.mega a { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 12px; align-items: center; padding: 12px; border-radius: 16px; }
+.mega a:hover { background: var(--field); }
+.mega b { display: block; font-size: 15px; }
+.mega span span { font-size: 13px; color: var(--muted); }
+.mega .ico { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: var(--tint); color: var(--tint-ink); }
+.header-tools { display: flex; align-items: center; gap: 8px; }
+.icon-btn { width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--line); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.icon-btn:hover { color: var(--accent); }
+.theme-btn .moon { display: none; }
+:root[data-theme="dark"] .theme-btn .sun { display: none; }
+:root[data-theme="dark"] .theme-btn .moon { display: block; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme-btn .sun { display: none; } :root:not([data-theme="light"]) .theme-btn .moon { display: block; } }
+.menu-btn { display: none; }
+.mobile-nav { padding: 6px clamp(16px, 4vw, 48px) 20px; display: flex; flex-direction: column; gap: 6px; }
+.mobile-nav a, .mobile-nav summary { padding: 13px 16px; border-radius: 14px; background: var(--surface); font-weight: 500; display: block; cursor: pointer; }
+.mobile-nav details a { background: none; padding: 10px 16px 10px 28px; }
+.mobile-nav summary { list-style: none; }
+.mobile-nav summary::-webkit-details-marker { display: none; }
+@media (max-width: 1140px) {
+  .nav, .header-tools .btn { display: none; }
+  .menu-btn { display: inline-flex; }
+}
+
+/* Secciones */
+section { scroll-margin-top: 90px; }
+.section { padding-block: clamp(56px, 8vw, 104px); }
+.eyebrow { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 14px; display: block; }
+.h2 { font-size: clamp(34px, 4.6vw, 56px); font-weight: 800; max-width: 20ch; }
+.lead { font-size: clamp(17px, 1.5vw, 19.5px); color: var(--muted); max-width: 60ch; }
+.section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(28px, 4vw, 44px); }
+.section-head > div { display: flex; flex-direction: column; gap: 14px; }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: center; padding-block: clamp(36px, 6vw, 80px) clamp(40px, 6vw, 72px); }
+.hero-copy { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.hero h1 { font-size: clamp(46px, 7.4vw, 92px); font-weight: 800; line-height: .94; letter-spacing: -0.045em; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.switch { display: inline-flex; padding: 5px; background: var(--surface); border-radius: 999px; box-shadow: var(--shadow); align-self: flex-start; }
+.switch button { font: inherit; font-size: 15px; font-weight: 600; border: none; background: none; color: var(--muted); padding: 10px 20px; border-radius: 999px; cursor: pointer; transition: background-color .2s ease, color .2s ease; }
+.switch button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.trust { display: flex; gap: clamp(18px, 3vw, 36px); flex-wrap: wrap; padding-top: 8px; }
+.trust div { display: flex; flex-direction: column; }
+.trust b { font-family: var(--f-display); font-size: clamp(26px, 2.6vw, 34px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.trust span { font-size: 14px; color: var(--muted); }
+
+.stage { position: relative; aspect-ratio: 1 / 1; max-width: 100%; border-radius: var(--r-xl); background: var(--deep); overflow: hidden; isolation: isolate; }
+.stage svg.arcs { position: absolute; inset: 0; width: 100%; height: 100%; }
+.stage .arc { fill: none; stroke-linecap: round; transition: transform .6s cubic-bezier(.2,.8,.2,1); transform-origin: 50% 78%; }
+.stage .arc { stroke-dasharray: 1400; stroke-dashoffset: 0; animation: draw 1.6s cubic-bezier(.2,.8,.2,1) both; }
+.stage .arc:nth-child(2) { animation-delay: .15s; }
+.stage .arc:nth-child(3) { animation-delay: .3s; }
+@keyframes draw { from { stroke-dashoffset: 1400; } to { stroke-dashoffset: 0; } }
+.stage-chips { position: absolute; inset: auto 22px 22px 22px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.chip-card { background: var(--surface); color: var(--ink); border-radius: 18px; padding: 14px 16px; display: flex; gap: 12px; align-items: center; font-weight: 600; font-size: 15px; line-height: 1.25; box-shadow: 0 10px 30px rgba(0,0,0,.18); transition: transform .3s ease; }
+.chip-card:hover { transform: translateY(-3px); }
+.chip-card i { width: 38px; height: 38px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-style: normal; }
+.stage-title { position: absolute; left: 26px; top: 24px; right: 26px; color: var(--on-deep); font-family: var(--f-display); font-weight: 700; font-size: clamp(20px, 2vw, 26px); line-height: 1.15; letter-spacing: -0.02em; max-width: 16ch; }
+
+/* Bloque de caminos (empresa / persona) */
+.paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.path { display: flex; flex-direction: column; gap: 14px; padding: clamp(24px, 3vw, 34px); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow); transition: transform .2s ease; }
+.path:hover { transform: translateY(-3px); }
+.path h3 { font-size: clamp(24px, 2.4vw, 30px); font-weight: 700; }
+.path ul { padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.path li a, .tag { font-size: 14px; font-weight: 500; padding: 7px 13px; border-radius: 999px; background: var(--field); display: inline-block; }
+.path li a:hover { background: var(--tint); color: var(--tint-ink); }
+.path-deep { background: var(--deep); color: var(--on-deep); box-shadow: none; }
+.path-deep p { color: var(--on-deep-muted); }
+.path-deep li a { background: var(--deep-2); }
+.path-deep li a:hover { background: #FFFFFF; color: #3B1446; }
+
+/* Servicios */
+.services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.svc { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow); overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; min-height: 270px; }
+.svc::after { content: ""; position: absolute; width: 220px; height: 220px; right: -90px; bottom: -110px; border-radius: 50%; border: 26px solid var(--tint); transition: transform .4s cubic-bezier(.2,.8,.2,1); z-index: 0; }
+.svc:hover { transform: translateY(-4px); }
+.svc:hover::after { transform: scale(1.25) translate(-12px, -12px); }
+.svc > * { position: relative; z-index: 1; }
+.svc .ico { width: 52px; height: 52px; border-radius: 16px; background: var(--tint); color: var(--tint-ink); display: flex; align-items: center; justify-content: center; }
+.svc h3 { font-size: 25px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.08; }
+.svc p { color: var(--muted); font-size: 15.5px; }
+.svc .link { margin-top: auto; }
+.svc-feature { background: var(--accent); color: var(--on-accent); box-shadow: none; }
+.svc-feature p { color: inherit; opacity: .9; }
+.svc-feature .ico { background: rgba(255,255,255,.2); color: inherit; }
+.svc-feature::after { border-color: rgba(255,255,255,.14); }
+.svc-feature .link { color: inherit; }
+
+/* Autodiagnóstico */
+.quiz { border-radius: var(--r-xl); background: var(--deep); color: var(--on-deep); padding: clamp(24px, 4vw, 56px); display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+.quiz-intro { display: flex; flex-direction: column; gap: 18px; }
+.quiz-intro h2 { font-size: clamp(32px, 4vw, 50px); font-weight: 800; }
+.quiz-intro p { color: var(--on-deep-muted); font-size: 17.5px; }
+.quiz-card { background: var(--surface); color: var(--ink); border-radius: var(--r-lg); padding: clamp(20px, 3vw, 32px); display: flex; flex-direction: column; gap: 18px; min-height: 430px; }
+.progress { display: flex; gap: 6px; }
+.progress i { flex: 1; height: 6px; border-radius: 999px; background: var(--field); transition: background-color .3s ease; }
+.progress i.on { background: var(--accent); }
+.quiz-q { font-family: var(--f-display); font-size: clamp(22px, 2.2vw, 28px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+.quiz-count { font-size: 14px; color: var(--muted); font-weight: 500; }
+.opts { display: grid; gap: 10px; }
+.opt { font: inherit; text-align: left; border: none; cursor: pointer; padding: 15px 18px; border-radius: 16px; background: var(--field); color: var(--ink); font-weight: 500; display: flex; justify-content: space-between; gap: 12px; align-items: center; transition: background-color .15s ease, transform .15s ease; }
+.opt:hover { background: var(--tint); color: var(--tint-ink); transform: translateX(3px); }
+.quiz-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: auto; }
+.back { font: inherit; font-weight: 600; background: none; border: none; color: var(--muted); cursor: pointer; padding: 8px 0; }
+.result h3 { font-size: clamp(26px, 2.6vw, 34px); font-weight: 800; }
+.result-bars { display: flex; flex-direction: column; gap: 10px; }
+.rbar { display: grid; grid-template-columns: minmax(0, 190px) minmax(0, 1fr) 40px; gap: 12px; align-items: center; font-size: 14px; }
+.rbar div { height: 10px; border-radius: 999px; background: var(--field); overflow: hidden; }
+.rbar div span { display: block; height: 100%; border-radius: 999px; background: var(--accent-2); width: 0; transition: width .9s cubic-bezier(.2,.8,.2,1); }
+.rbar.top div span { background: var(--accent); }
+.rbar b { text-align: right; font-variant-numeric: tabular-nums; }
+.fade-in { animation: fadein .35s ease both; }
+@keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* Método */
+.method { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+.steps-tabs { display: flex; flex-direction: column; gap: 10px; }
+.step-tab { font: inherit; text-align: left; border: none; cursor: pointer; display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 16px; align-items: center; padding: 14px; border-radius: 20px; background: transparent; color: var(--ink); transition: background-color .2s ease; }
+.step-tab .n { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--f-display); font-weight: 800; font-size: 22px; background: var(--field); color: var(--muted); transition: background-color .2s ease, color .2s ease; }
+.step-tab b { font-family: var(--f-display); font-size: 22px; font-weight: 700; letter-spacing: -0.02em; display: block; }
+.step-tab span span { color: var(--muted); font-size: 14.5px; }
+.step-tab[aria-selected="true"] { background: var(--surface); box-shadow: var(--shadow); }
+.step-tab[aria-selected="true"] .n { background: var(--accent); color: var(--on-accent); }
+.step-panel { border-radius: var(--r-lg); background: var(--tint-2); padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 18px; min-height: 360px; }
+.step-panel h3 { font-size: clamp(28px, 3vw, 38px); font-weight: 800; }
+.step-panel h4 { font-family: var(--f-body); font-size: 14px; letter-spacing: 0; font-weight: 600; color: var(--tint-2-ink); }
+.step-panel ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; color: var(--muted); }
+.deliver { display: flex; gap: 12px; align-items: center; background: var(--surface); border-radius: 16px; padding: 14px 16px; font-weight: 500; }
+
+/* Tipos de organización (carrusel) */
+.carousel { position: relative; }
+.track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(270px, 1fr); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-width: thin; }
+.track > * { scroll-snap-align: start; }
+.org { border-radius: var(--r-lg); padding: 26px; min-height: 250px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.org h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin-top: auto; }
+.org p { color: var(--muted); font-size: 15px; }
+.org .ico { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; }
+.car-btns { display: flex; gap: 8px; }
+
+/* Nosotros */
+.about { border-radius: var(--r-xl); background: var(--surface); box-shadow: var(--shadow); padding: clamp(22px, 3.4vw, 48px); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 56px); align-items: center; }
+.portrait { aspect-ratio: 4 / 5; max-width: 100%; border-radius: 28px; background: var(--field); border: 2px dashed var(--line); display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; color: var(--tint-2-ink); font-weight: 600; }
+.about-copy { display: flex; flex-direction: column; gap: 16px; }
+.about-copy h2 { font-size: clamp(32px, 4vw, 50px); font-weight: 800; }
+.about-copy p { color: var(--muted); font-size: 17px; max-width: 62ch; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 999px; background: var(--tint); color: var(--tint-ink); }
+.chip.v { background: var(--tint-2); color: var(--tint-2-ink); }
+
+/* Recursos y testimonios */
+.cards3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.res { border-radius: var(--r-lg); padding: 28px; min-height: 250px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); box-shadow: var(--shadow); transition: transform .2s ease; }
+.res:hover { transform: translateY(-3px); }
+.res h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.12; margin-top: auto; }
+.res small { font-size: 13.5px; color: var(--muted); }
+.res-feature { background: var(--deep); color: var(--on-deep); box-shadow: none; }
+.res-feature small { color: var(--on-deep-muted); }
+.quote { margin: 0; border-radius: var(--r-lg); padding: 30px; background: var(--tint); display: flex; flex-direction: column; gap: 18px; }
+.quote blockquote { margin: 0; font-family: var(--f-display); font-size: 22px; line-height: 1.3; font-weight: 500; letter-spacing: -0.01em; }
+
+/* FAQ */
+.faq { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 56px); }
+.faq-list { display: flex; flex-direction: column; gap: 10px; }
+details.qa { background: var(--surface); border-radius: var(--r-md); box-shadow: var(--shadow); }
+details.qa summary { cursor: pointer; list-style: none; padding: 20px 24px; font-weight: 600; font-size: 17px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+details.qa summary::-webkit-details-marker { display: none; }
+details.qa summary::after { content: "+"; font-family: var(--f-display); font-size: 28px; line-height: 1; color: var(--accent); transition: transform .2s ease; }
+details.qa[open] summary::after { transform: rotate(45deg); }
+details.qa p { padding: 0 24px 20px; color: var(--muted); }
+
+/* Contacto y formularios */
+.contact { border-radius: var(--r-xl); background: var(--accent); color: var(--on-accent); padding: clamp(24px, 4vw, 56px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: center; }
+.contact h2 { font-size: clamp(36px, 5vw, 60px); font-weight: 800; line-height: .96; letter-spacing: -0.045em; }
+.contact-copy { display: flex; flex-direction: column; gap: 18px; }
+.contact-copy p { font-size: 18px; opacity: .92; }
+.copy-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.copy-btn { font: inherit; font-size: 13px; font-weight: 600; border: none; border-radius: 999px; padding: 5px 12px; background: rgba(255,255,255,.22); color: inherit; cursor: pointer; }
+.form { background: var(--surface); color: var(--ink); border-radius: var(--r-lg); padding: clamp(20px, 3vw, 30px); display: flex; flex-direction: column; gap: 14px; }
+.form h2, .form h3 { font-size: 28px; font-weight: 800; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; min-width: 0; }
+.field input, .field select, .field textarea { font: inherit; font-weight: 400; font-size: 16px; padding: 13px 16px; border: 2px solid transparent; background: var(--field); color: var(--ink); border-radius: var(--r-sm); width: 100%; }
+.field textarea { min-height: 110px; resize: vertical; }
+.field input[type="file"] { padding: 11px; }
+.field [aria-invalid="true"] { border-color: var(--accent); }
+.err { font-size: 13px; font-weight: 600; color: var(--accent); }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--muted); }
+.consent input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--accent); flex-shrink: 0; }
+.consent a { color: var(--accent); font-weight: 600; }
+.success { background: var(--surface); color: var(--ink); border-radius: var(--r-lg); padding: 30px; display: flex; flex-direction: column; gap: 12px; }
+.success h3 { font-size: 28px; font-weight: 800; }
+
+/* Páginas internas */
+.page-hero { padding-block: clamp(36px, 6vw, 80px) clamp(28px, 4vw, 48px); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(24px, 4vw, 56px); align-items: end; }
+.page-hero h1 { font-size: clamp(42px, 6.4vw, 80px); font-weight: 800; letter-spacing: -0.045em; line-height: .96; }
+.crumbs { font-size: 14px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.crumbs a:hover { color: var(--accent); }
+.badge-ico { width: 120px; height: 120px; border-radius: 36px; display: flex; align-items: center; justify-content: center; background: var(--tint); color: var(--tint-ink); justify-self: end; }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.panel { border-radius: var(--r-lg); padding: clamp(22px, 3vw, 34px); background: var(--surface); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 14px; }
+.panel h2 { font-size: clamp(26px, 2.6vw, 32px); font-weight: 700; }
+.panel ul { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; color: var(--muted); }
+.panel-tint { background: var(--tint-2); box-shadow: none; }
+.panel-deep { background: var(--deep); color: var(--on-deep); box-shadow: none; }
+.panel-deep ul, .panel-deep p { color: var(--on-deep-muted); }
+.cta-band { border-radius: var(--r-xl); background: var(--deep); color: var(--on-deep); padding: clamp(26px, 4vw, 52px); display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+.cta-band h2 { font-size: clamp(30px, 4vw, 48px); font-weight: 800; max-width: 18ch; }
+.tips { display: flex; flex-direction: column; gap: 10px; }
+.legal { max-width: 760px; padding-block: clamp(32px, 6vw, 72px); display: flex; flex-direction: column; gap: 16px; }
+.legal h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 800; }
+.legal h2 { font-size: 26px; font-weight: 700; margin-top: 18px; scroll-margin-top: 90px; }
+.legal p, .legal li { color: var(--muted); }
+.legal ul { padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+.note { background: var(--tint); color: var(--tint-ink); border-radius: var(--r-md); padding: 16px 20px; font-weight: 500; font-size: 15px; }
+
+/* Footer */
+.footer { background: var(--deep); color: var(--on-deep-muted); padding-block: 64px 36px; margin-top: clamp(56px, 8vw, 100px); }
+.footer-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) repeat(4, minmax(0, 1fr)); gap: 32px; }
+.footer img { height: 54px; width: auto; align-self: flex-start; }
+.footer nav { display: flex; flex-direction: column; gap: 9px; font-size: 14.5px; }
+.footer nav b { color: var(--on-deep); font-size: 15px; }
+.footer a:hover { color: var(--on-deep); text-decoration: underline; }
+.footer-bottom { border-top: 1px solid var(--deep-2); margin-top: 40px; padding-top: 22px; font-size: 13.5px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.wa-float { position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); height: 58px; padding: 0 22px 0 18px; border-radius: 999px; background: #1E7A45; color: #FFFFFF; display: flex; align-items: center; gap: 10px; font-weight: 600; box-shadow: 0 12px 28px rgba(20, 10, 30, .28); z-index: 40; transition: transform .2s ease; }
+.wa-float:hover { transform: translateY(-3px); }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero, .quiz, .method, .about, .contact, .faq, .page-hero { grid-template-columns: minmax(0, 1fr); }
+  .services, .cards3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stage { max-width: 560px; }
+  .badge-ico { justify-self: start; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .paths, .services, .cards3, .two, .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .footer-grid { grid-template-columns: minmax(0, 1fr); }
+  .actions .btn { width: 100%; }
+  .stage-chips { grid-template-columns: minmax(0, 1fr); inset: auto 14px 14px 14px; gap: 8px; }
+  .chip-card { padding: 10px 12px; font-size: 14px; }
+  .chip-card i { width: 32px; height: 32px; }
+  .stage { aspect-ratio: 4 / 5; }
+  .wa-float span { display: none; }
+  .wa-float { width: 58px; padding: 0; justify-content: center; }
+  .rbar { grid-template-columns: minmax(0, 1fr) 40px; }
+  .rbar div { grid-column: 1 / -1; grid-row: 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Ficha de la directora (reemplaza la foto) */
+.bio-card { background: var(--deep); color: var(--on-deep); border-radius: 28px; padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; gap: 22px; }
+.bio-head { display: flex; gap: 16px; align-items: center; }
+.bio-mono { width: 72px; height: 72px; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-family: var(--f-display); font-weight: 800; font-size: 26px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.bio-head b { display: block; font-family: var(--f-display); font-size: 24px; letter-spacing: -0.02em; line-height: 1.1; }
+.bio-head span span { color: var(--on-deep-muted); font-size: 15px; }
+.bio-facts { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; }
+.bio-facts li { border-top: 1px solid var(--deep-2); padding: 14px 0; color: var(--on-deep-muted); font-size: 15px; line-height: 1.45; }
+.bio-facts li b { display: block; color: var(--on-deep); font-family: var(--f-display); font-size: 22px; letter-spacing: -0.02em; }
+.bio-card .btn { align-self: flex-start; }
+/* Reseñas de Google */
+.reviews { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.review { margin: 0; border-radius: var(--r-lg); padding: 28px; background: var(--surface); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 16px; }
+.review .stars { display: flex; gap: 2px; }
+.review blockquote { margin: 0; font-size: 16.5px; line-height: 1.6; }
+.review figcaption { margin-top: auto; display: flex; gap: 12px; align-items: center; font-size: 15px; }
+.review figcaption span span { display: block; font-size: 13.5px; color: var(--muted); }
+.rev-ini { width: 42px; height: 42px; border-radius: 50%; background: var(--tint-2); color: var(--tint-2-ink); font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.g-badge { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; color: var(--muted); }
+@media (max-width: 980px) { .reviews { grid-template-columns: minmax(0, 1fr); } }
+.svc-photo { margin: 0; position: relative; justify-self: stretch; align-self: stretch; min-height: 300px; border-radius: 32px; overflow: hidden; background: linear-gradient(135deg, var(--tint), var(--deep-2, #3B1446)); box-shadow: 0 24px 60px -30px rgba(59, 20, 70, .55); }
+.svc-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; color: transparent; font-size: 0; }
+.svc-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(59, 20, 70, .55)); pointer-events: none; }
+.svc-photo figcaption { position: absolute; right: 14px; bottom: 10px; z-index: 1; font-size: 11px; color: rgba(255, 255, 255, .85); }
+@media (max-width: 900px) { .svc-photo { min-height: 0; aspect-ratio: 16 / 10; } }
+.cookie-bar{position:fixed;left:16px;bottom:16px;z-index:60;max-width:420px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:18px;box-shadow:0 16px 40px rgba(20,10,30,.22);padding:18px 18px 16px;font-size:14.5px;line-height:1.5}.cookie-bar p{margin:0 0 12px}.cookie-bar a{color:var(--accent);font-weight:600}.cookie-bar .cb-actions{display:flex;gap:10px;flex-wrap:wrap}.cookie-bar button{font:inherit;font-weight:600;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;border:1.5px solid var(--ink);background:transparent;color:var(--ink)}.cookie-bar button.cb-ok{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}@media (max-width:640px){.cookie-bar{left:12px;right:12px;bottom:12px;max-width:none}body.cb-open .wa-float{bottom:calc(var(--cb-h,170px) + 24px)}}</style></head><body><a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Decidir Consulting, inicio"><img class="logo-light" src="logo-color.png" alt="Decidir Consulting" width="70" height="46"><img class="logo-dark" src="logo-white.png" alt="Decidir Consulting" width="70" height="46"></a>
+  <nav class="nav" aria-label="Principal"><div class="nav-drop"><button type="button" aria-expanded="false" aria-controls="mega">Servicios <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="mega" id="mega" hidden><a href="estrategia.html"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-4h12v4"/></svg></span><span><b>Estrategia y desarrollo organizacional</b><span>Estructura, roles y procesos alineados al plan de negocio.</span></span></a><a href="cultura.html"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></span><span><b>Cultura, clima y gestión del cambio</b><span>Relevamiento cultural, clima y acompañamiento de transformaciones.</span></span></a><a href="liderazgo.html"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18l6-6 4 4 6-8"/><path d="M15 8h5v5"/></svg></span><span><b>Liderazgo y coaching ejecutivo</b><span>Líderes preparados, equipos alineados y planes de sucesión.</span></span></a><a href="talento.html"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11l2 2 4-4"/></svg></span><span><b>Atracción y desarrollo de talento</b><span>Las personas indicadas para las posiciones clave.</span></span></a><a href="analytics.html"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M21 20H3"/></svg></span><span><b>People analytics</b><span>Indicadores de RRHH para decidir con datos.</span></span></a><a href="soporte-rrhh.html"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V7z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><span><b>Soporte integral de RRHH</b><span>Tu área de Recursos Humanos, total o parcialmente tercerizada.</span></span></a></div></div><a href="index.html#organizaciones">Organizaciones</a><a href="index.html#metodo">Cómo trabajamos</a><a href="personas.html">Personas y candidatos</a><a href="nosotros.html">Nosotros</a></nav>
+  <div class="header-tools">
+    <button class="icon-btn theme-btn" type="button" aria-label="Cambiar tema"><span class="sun"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span class="moon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span></button>
+    <a class="btn btn-accent btn-sm" href="diagnostico.html">Pedir diagnóstico</a>
+    <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menú" hidden><details><summary>Servicios</summary><a href="estrategia.html">Estrategia y desarrollo organizacional</a><a href="cultura.html">Cultura, clima y gestión del cambio</a><a href="liderazgo.html">Liderazgo y coaching ejecutivo</a><a href="talento.html">Atracción y desarrollo de talento</a><a href="analytics.html">People analytics</a><a href="soporte-rrhh.html">Soporte integral de RRHH</a></details><a href="index.html#autodiagnostico">Autodiagnóstico</a><a href="index.html#metodo">Cómo trabajamos</a><a href="personas.html">Personas y candidatos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a><a class="btn btn-accent" href="diagnostico.html">Pedir diagnóstico</a></nav>
+</header>
+<main id="contenido"><div class="wrap">
+  <section class="page-hero" aria-labelledby="h">
+    <div><nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span>/</span><a href="index.html#servicios">Servicios</a><span>/</span><span aria-current="page">Soporte integral de RRHH</span></nav>
+      <h1 id="h">Soporte integral de RRHH</h1><p class="lead" style="margin-top: 22px">Para organizaciones sin un área de RRHH propia: asumimos la gestión de personas junto a la dirección, con un interlocutor dedicado y un plan anual.</p>
+      <div class="actions" style="margin-top: 26px"><a class="btn btn-accent" href="diagnostico.html">Pedir diagnóstico sin costo</a><a class="btn btn-ghost" href="https://wa.me/5491162178771?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20Decidir%20Consulting.%20Mi%20consulta%20es%3A%20" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg> WhatsApp</a></div></div>
+    <figure class="svc-photo"><picture><source type="image/webp" srcset="img/soporte-rrhh-800.webp 800w, img/soporte-rrhh.webp 933w" sizes="(max-width: 900px) 100vw, 40vw"><img src="img/soporte-rrhh.jpg" alt="Manos de un equipo unidas sobre una mesa de trabajo" width="933" height="1400" style="object-position: center 55%" fetchpriority="high"></picture></figure>
+  </section>
+  <div class="two">
+    <article class="panel"><h2>Para quién es</h2><ul><li>Empresas donde RRHH lo resuelve el dueño o una sola persona</li><li>Organizaciones cuyo estudio contable solo liquida sueldos</li><li>Equipos que necesitan refuerzo temporal en RRHH</li></ul></article>
+    <article class="panel panel-tint"><h2>Qué incluye</h2><ul><li>Gestión de RRHH total o parcial</li><li>Políticas y procedimientos</li><li>Onboarding de nuevos ingresos</li><li>Evaluación de desempeño</li><li>Asesoramiento permanente a la dirección</li></ul></article>
+  </div>
+  <section class="section" aria-labelledby="rec">
+    <div class="panel panel-deep"><h2 id="rec">Qué recibís</h2><div class="tips"><div class="deliver" style="background: var(--deep-2); color: var(--on-deep)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg><span>Interlocutor dedicado</span></div><div class="deliver" style="background: var(--deep-2); color: var(--on-deep)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg><span>Plan anual de RRHH</span></div><div class="deliver" style="background: var(--deep-2); color: var(--on-deep)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg><span>Reportes mensuales de gestión</span></div></div>
+      <p>Trabajamos con nuestro método en cuatro etapas: diagnóstico, plan de acción, implementación y evaluación. <a href="index.html#metodo" style="text-decoration: underline">Ver cómo trabajamos</a></p></div>
+  </section>
+  <section aria-labelledby="otros"><div class="section-head"><div><h2 class="h2" id="otros" style="font-size: clamp(28px, 3.4vw, 40px)">Otros servicios</h2></div></div><div class="services"><a class="svc" href="estrategia.html" style="min-height: 0"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-4h12v4"/></svg></span><h3 style="font-size: 21px">Estrategia y desarrollo organizacional</h3><span class="link">Ver más <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="svc" href="cultura.html" style="min-height: 0"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></span><h3 style="font-size: 21px">Cultura, clima y gestión del cambio</h3><span class="link">Ver más <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="svc" href="liderazgo.html" style="min-height: 0"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18l6-6 4 4 6-8"/><path d="M15 8h5v5"/></svg></span><h3 style="font-size: 21px">Liderazgo y coaching ejecutivo</h3><span class="link">Ver más <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="svc" href="talento.html" style="min-height: 0"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11l2 2 4-4"/></svg></span><h3 style="font-size: 21px">Atracción y desarrollo de talento</h3><span class="link">Ver más <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="svc" href="analytics.html" style="min-height: 0"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M21 20H3"/></svg></span><h3 style="font-size: 21px">People analytics</h3><span class="link">Ver más <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div></section>
+  <section class="section"><div class="cta-band"><h2>Empecemos por una buena lectura de tu organización.</h2><a class="btn btn-light" href="diagnostico.html">Pedir diagnóstico sin costo</a></div></section>
+</div></main>
+<footer class="footer"><div class="wrap">
+  <div class="footer-grid">
+    <div style="display: flex; flex-direction: column; gap: 14px"><img src="logo-white.png" alt="Decidir Consulting" width="83" height="54"><span>Consultoría organizacional y de gestión. Ciudad Autónoma de Buenos Aires, con alcance nacional y regional.</span><span>WhatsApp +54 9 11 6217-8771<br>info@decidirconsulting.com.ar</span></div>
+    <nav aria-label="Soy empresa"><b>Soy empresa</b><a href="diagnostico.html">Diagnóstico organizacional</a><a href="index.html#autodiagnostico">Autodiagnóstico</a><a href="index.html#organizaciones">Tipos de organización</a><a href="contacto.html">Contacto</a></nav>
+    <nav aria-label="Servicios"><b>Servicios</b><a href="estrategia.html">Estrategia y desarrollo organizacional</a><a href="cultura.html">Cultura, clima y gestión del cambio</a><a href="liderazgo.html">Liderazgo y coaching ejecutivo</a><a href="talento.html">Atracción y desarrollo de talento</a><a href="analytics.html">People analytics</a><a href="soporte-rrhh.html">Soporte integral de RRHH</a></nav>
+    <nav aria-label="Soy persona"><b>Soy persona</b><a href="personas.html#coaching">Coaching personal</a><a href="https://www.linkedin.com/company/decidir-consulting/jobs/" target="_blank" rel="noopener">Búsquedas activas</a><a href="personas.html#cv">Dejá tu CV</a><a href="personas.html#consejos">Consejos para candidatos</a></nav>
+    <nav aria-label="Decidir"><b>Decidir</b><a href="nosotros.html">Nosotros</a><a href="https://www.linkedin.com/company/decidir-consulting/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/decidirconsulting/" target="_blank" rel="noopener">Instagram</a></nav>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Decidir Consulting. Todos los derechos reservados.</span><span><a href="privacidad.html#aviso-legal">Aviso legal</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="privacidad.html#cookies" data-cookie-prefs>Cookies</a> · <a href="privacidad.html#terminos">Términos y condiciones</a></span></div>
+</div></footer>
+<a class="wa-float" href="https://wa.me/5491162178771?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20Decidir%20Consulting.%20Mi%20consulta%20es%3A%20" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><span>WhatsApp</span></a>
+<script>window.DECIDIR_NETLIFY=true;(function () {
+  var root = document.documentElement;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Tema claro / oscuro */
+  function effectiveTheme() {
+    var t = root.getAttribute('data-theme');
+    if (t) return t;
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  function labelTheme() {
+    var dark = effectiveTheme() === 'dark';
+    document.querySelectorAll('.theme-btn').forEach(function (b) {
+      b.setAttribute('aria-label', dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+      b.setAttribute('aria-pressed', String(dark));
+    });
+  }
+  document.querySelectorAll('.theme-btn').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('decidir-theme', next); } catch (e) {}
+      labelTheme();
+    });
+  });
+  labelTheme();
+
+  /* Menú móvil */
+  var menuBtn = document.getElementById('menu-btn');
+  var mobileNav = document.getElementById('mobile-nav');
+  if (menuBtn && mobileNav) {
+    menuBtn.addEventListener('click', function () {
+      var open = mobileNav.hidden;
+      mobileNav.hidden = !open;
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    });
+  }
+
+  /* Menú desplegable de servicios */
+  document.querySelectorAll('.nav-drop').forEach(function (drop) {
+    var btn = drop.querySelector('button');
+    var panel = drop.querySelector('.mega');
+    var set = function (open) { panel.hidden = !open; btn.setAttribute('aria-expanded', String(open)); };
+    btn.addEventListener('click', function (e) { e.stopPropagation(); set(window.matchMedia('(hover: hover)').matches ? true : panel.hidden); });
+    drop.addEventListener('mouseenter', function () { if (window.matchMedia('(hover: hover)').matches) set(true); });
+    drop.addEventListener('mouseleave', function () { if (window.matchMedia('(hover: hover)').matches) set(false); });
+    document.addEventListener('click', function (e) { if (!drop.contains(e.target)) set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { set(false); } });
+  });
+
+  /* Selector Soy empresa / Soy persona */
+  document.querySelectorAll('[data-switch]').forEach(function (sw) {
+    var group = sw.getAttribute('data-switch');
+    var btns = sw.querySelectorAll('button');
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var val = b.getAttribute('data-value');
+        btns.forEach(function (x) { x.setAttribute('aria-selected', String(x === b)); });
+        document.querySelectorAll('[data-panel^="' + group + ':"]').forEach(function (p) {
+          var show = p.getAttribute('data-panel') === group + ':' + val;
+          p.hidden = !show;
+          if (show && !reduce) { p.classList.remove('fade-in'); void p.offsetWidth; p.classList.add('fade-in'); }
+        });
+      });
+    });
+  });
+
+  /* Arcos de la portada que siguen al puntero */
+  var stage = document.querySelector('.stage');
+  if (stage && !reduce) {
+    var arcs = stage.querySelectorAll('.arc');
+    stage.addEventListener('pointermove', function (e) {
+      var r = stage.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      arcs.forEach(function (a, i) {
+        var k = (i + 1) * 14;
+        a.style.transform = 'translate(' + (x * k) + 'px,' + (y * k) + 'px) rotate(' + (x * (i + 1) * 3) + 'deg)';
+      });
+    });
+    stage.addEventListener('pointerleave', function () { arcs.forEach(function (a) { a.style.transform = ''; }); });
+  }
+
+  /* Método en 4 etapas */
+  document.querySelectorAll('[data-steps]').forEach(function (wrap) {
+    var tabs = wrap.querySelectorAll('[role="tab"]');
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(i); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { e.preventDefault(); select((i + 1) % tabs.length, true); }
+        if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); select((i - 1 + tabs.length) % tabs.length, true); }
+      });
+    });
+    function select(i, focus) {
+      tabs.forEach(function (t, j) {
+        var on = i === j;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        var p = document.getElementById(t.getAttribute('aria-controls'));
+        p.hidden = !on;
+        if (on && !reduce) { p.classList.remove('fade-in'); void p.offsetWidth; p.classList.add('fade-in'); }
+      });
+      if (focus) tabs[i].focus();
+    }
+  });
+
+  /* Carrusel */
+  document.querySelectorAll('[data-carousel]').forEach(function (c) {
+    var track = c.querySelector('.track');
+    c.querySelectorAll('[data-dir]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var card = track.firstElementChild;
+        var step = card ? card.getBoundingClientRect().width + 16 : 300;
+        track.scrollBy({ left: step * Number(b.getAttribute('data-dir')), behavior: reduce ? 'auto' : 'smooth' });
+      });
+    });
+  });
+
+  /* Copiar teléfono y email */
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy'));
+      var text = el ? el.textContent.trim() : '';
+      var done = function () { b.textContent = 'Copiado'; setTimeout(function () { b.textContent = 'Copiar'; }, 1600); };
+      var fallback = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Seleccionado'; };
+      try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+    });
+  });
+
+  /* Formularios */
+  var MSG = { valueMissing: 'Completá este dato.', typeMismatch: 'Revisá el formato del email.', consent: 'Necesitamos tu consentimiento para contactarte.', file: 'Adjuntá tu CV en PDF o Word.' };
+  document.querySelectorAll('form[data-lead]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var first = null;
+      form.querySelectorAll('[required]').forEach(function (f) {
+        var err = document.getElementById(f.id + '-err');
+        var ok = f.checkValidity();
+        f.setAttribute('aria-invalid', ok ? 'false' : 'true');
+        if (err) {
+          err.textContent = ok ? '' : (f.type === 'checkbox' ? MSG.consent : f.type === 'file' ? MSG.file : (f.validity.typeMismatch ? MSG.typeMismatch : MSG.valueMissing));
+          f.setAttribute('aria-describedby', err.id);
+        }
+        if (!ok && !first) first = f;
+      });
+      if (first) { first.focus(); return; }
+      var ok = document.getElementById(form.id + '-ok');
+      var show = function () { form.hidden = true; if (ok) { ok.hidden = false; ok.focus(); } };
+      if (!window.DECIDIR_NETLIFY) { show(); return; }
+      /* Envío real a Netlify Forms */
+      var btn = form.querySelector('[type="submit"]');
+      var label = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
+      var hasFile = !!form.querySelector('input[type="file"]');
+      var data = new FormData(form);
+      var opts = hasFile ? { method: 'POST', body: data }
+        : { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() };
+      fetch('/', opts).then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        show();
+      }).catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = label; }
+        var err = form.querySelector('.send-err');
+        if (!err) { err = document.createElement('p'); err.className = 'err send-err'; err.setAttribute('role', 'alert'); form.appendChild(err); }
+        err.textContent = 'No pudimos enviar el formulario. Probá de nuevo o escribinos por WhatsApp al +54 9 11 6217-8771.';
+      });
+    });
+    form.addEventListener('input', function (e) {
+      var f = e.target;
+      if (f.getAttribute('aria-invalid') === 'true' && f.checkValidity()) {
+        f.setAttribute('aria-invalid', 'false');
+        var err = document.getElementById(f.id + '-err'); if (err) err.textContent = '';
+      }
+    });
+  });
+
+  /* Autodiagnóstico */
+  var quiz = document.getElementById('quiz');
+  if (quiz) {
+    var S = JSON.parse(document.getElementById('quiz-services').textContent);
+    var Q = [
+      { q: '¿Qué está pasando hoy en tu organización?', o: [
+        ['Crecemos rápido y la estructura quedó chica', { est: 3, sop: 1 }],
+        ['Estamos incorporando tecnología o cambiando la forma de trabajar', { cul: 3, dat: 1 }],
+        ['Se viene un cambio generacional o de dirección', { lid: 2, est: 2 }],
+        ['Nos cuesta encontrar o retener a las personas indicadas', { tal: 3, cul: 1 }]] },
+      { q: '¿Cómo están definidos los roles y las responsabilidades?', o: [
+        ['Claros y documentados', { dat: 1 }],
+        ['Se superponen o dependen de pocas personas', { est: 3 }],
+        ['No tenemos descripciones de puesto', { est: 2, sop: 2 }]] },
+      { q: '¿Cómo describirías el clima del equipo?', o: [
+        ['Bueno, y lo medimos', { dat: 2 }],
+        ['Creemos que bien, pero no lo medimos', { dat: 2, cul: 1 }],
+        ['Hay tensiones o rotación alta', { cul: 3, lid: 1 }]] },
+      { q: '¿Tus líderes tienen herramientas para conducir equipos?', o: [
+        ['Sí, con formación continua', { dat: 1 }],
+        ['Algunos, sin un plan de desarrollo', { lid: 3 }],
+        ['Lideran por intuición', { lid: 3, cul: 1 }]] },
+      { q: '¿Quién gestiona hoy los Recursos Humanos?', o: [
+        ['Un área propia con equipo', { dat: 1, cul: 1 }],
+        ['Una sola persona o el dueño', { sop: 3 }],
+        ['El estudio contable, que solo liquida sueldos', { sop: 3, est: 1 }]] },
+      { q: '¿Qué decisión sobre personas tenés más cerca?', o: [
+        ['Cubrir una posición clave', { tal: 3 }],
+        ['Rediseñar el organigrama', { est: 3 }],
+        ['Mejorar el compromiso del equipo', { cul: 2, dat: 1 }],
+        ['Preparar a un sucesor', { lid: 3 }]] }
+    ];
+    var answers = [];
+    var card = quiz.querySelector('.quiz-card');
+    var esc = function (s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    var arrow = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+    function progress(n) {
+      var h = '<div class="progress" aria-hidden="true">';
+      for (var i = 0; i < Q.length; i++) h += '<i class="' + (i < n ? 'on' : '') + '"></i>';
+      return h + '</div>';
+    }
+    function render() {
+      var i = answers.length;
+      if (i >= Q.length) return result();
+      var q = Q[i];
+      var h = progress(i) + '<span class="quiz-count">Pregunta ' + (i + 1) + ' de ' + Q.length + '</span>' +
+        '<h3 class="quiz-q" id="quiz-q" tabindex="-1">' + esc(q.q) + '</h3><div class="opts" role="group" aria-labelledby="quiz-q">';
+      q.o.forEach(function (o, k) { h += '<button class="opt" type="button" data-k="' + k + '"><span>' + esc(o[0]) + '</span>' + arrow + '</button>'; });
+      h += '</div><div class="quiz-nav">' + (i > 0 ? '<button class="back" type="button" data-back>Volver</button>' : '<span></span>') + '</div>';
+      card.innerHTML = h;
+      if (!reduce) { card.classList.remove('fade-in'); void card.offsetWidth; card.classList.add('fade-in'); }
+      card.querySelectorAll('.opt').forEach(function (b) {
+        b.addEventListener('click', function () { answers.push(Number(b.getAttribute('data-k'))); render(); focusQ(); });
+      });
+      var back = card.querySelector('[data-back]');
+      if (back) back.addEventListener('click', function () { answers.pop(); render(); focusQ(); });
+    }
+    function focusQ() { var t = card.querySelector('#quiz-q, #quiz-r'); if (t) t.focus({ preventScroll: true }); }
+    function result() {
+      var score = { est: 0, cul: 0, lid: 0, tal: 0, dat: 0, sop: 0 };
+      answers.forEach(function (k, i) { var w = Q[i].o[k][1]; for (var s in w) score[s] += w[s]; });
+      var ranked = Object.keys(score).sort(function (a, b) { return score[b] - score[a]; });
+      var max = score[ranked[0]] || 1;
+      var top = S[ranked[0]];
+      var h = progress(Q.length) + '<div class="result"><span class="quiz-count">Tu resultado</span>' +
+        '<h3 id="quiz-r" tabindex="-1">Tu prioridad: ' + esc(top.title) + '</h3></div>' +
+        '<p class="muted">' + esc(top.short) + ' Este resultado es orientativo: en la reunión de diagnóstico lo validamos con vos.</p><div class="result-bars">';
+      ranked.slice(0, 4).forEach(function (k, i) {
+        var pct = Math.round(score[k] / max * 100);
+        h += '<div class="rbar' + (i === 0 ? ' top' : '') + '"><span>' + esc(S[k].title) + '</span><div><span data-w="' + pct + '"></span></div><b>' + pct + '%</b></div>';
+      });
+      h += '</div><div class="actions"><a class="btn btn-accent" href="diagnostico.html">Pedir diagnóstico sin costo</a><a class="btn btn-ghost" href="' + esc(top.slug) + '.html">Ver el servicio</a></div>' +
+        '<div class="quiz-nav"><button class="back" type="button" data-restart>Volver a empezar</button></div>';
+      card.innerHTML = h;
+      requestAnimationFrame(function () { card.querySelectorAll('[data-w]').forEach(function (b) { b.style.width = b.getAttribute('data-w') + '%'; }); });
+      card.querySelector('[data-restart]').addEventListener('click', function () { answers = []; render(); focusQ(); });
+    }
+    render();
+  }
+})();
+</script><script>
+document.addEventListener('click',function(e){var a=e.target.closest('a[href*="wa.me"]');if(a&&window.gtag)gtag('event','contacto_whatsapp',{pagina:location.pathname});var l=e.target.closest('a[href*="linkedin.com"]');if(l&&window.gtag)gtag('event','clic_linkedin',{destino:l.href});});
+document.querySelectorAll('.success').forEach(function(box){new MutationObserver(function(){if(!box.hidden&&window.gtag)gtag('event','generate_lead',{formulario:box.id.replace('-ok','')});}).observe(box,{attributes:true,attributeFilter:['hidden']});});
+</script><div class="cookie-bar" id="cookie-bar" role="region" aria-label="Aviso de cookies" hidden><p>Usamos cookies de analítica para entender cómo se usa el sitio y mejorarlo. Solo se activan si las aceptás. <a href="privacidad.html#cookies">Más información</a></p><div class="cb-actions"><button type="button" class="cb-ok" data-cb="granted">Aceptar</button><button type="button" data-cb="denied">Rechazar</button></div></div><script>(function(){var bar=document.getElementById('cookie-bar');if(!bar)return;var k='decidir-cookies',v=null;try{v=localStorage.getItem(k)}catch(e){}function show(){bar.hidden=false;document.body.classList.add('cb-open');document.documentElement.style.setProperty('--cb-h',bar.offsetHeight+'px')}function hide(){bar.hidden=true;document.body.classList.remove('cb-open')}if(v!=='granted'&&v!=='denied')show();bar.addEventListener('click',function(e){var b=e.target.closest('[data-cb]');if(!b)return;var c=b.getAttribute('data-cb');try{localStorage.setItem(k,c)}catch(err){}if(window.gtag)gtag('consent','update',{analytics_storage:c});hide()});document.querySelectorAll('[data-cookie-prefs]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();show()})})})();</script></body></html>

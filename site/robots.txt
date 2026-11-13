@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://decidirconsulting.netlify.app/sitemap.xml
